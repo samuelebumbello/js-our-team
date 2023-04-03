@@ -37,11 +37,11 @@ const list = document.querySelector('ul');
 for (let squad of team) {
     list.innerHTML += `
         <div>
+        <img src='img/${squad.image}'></img>
             <li>
                 ${squad.firstname}<br>
                 ${squad.role}
             </li>
-            <img src='img/${squad.image}'></img>
         </div>
         `
 }
